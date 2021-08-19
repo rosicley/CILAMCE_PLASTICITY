@@ -1,0 +1,92 @@
+\begin{thebibliography}{}
+
+\bibitem[Coda and Greco, 2004]{Coda2004}
+H. Coda and M. Greco.
+\newblock A simple fem formulation for large deflection 2d frame analysis based
+  on position description.
+\newblock {\em Computer Methods in Applied Mechanics and Engineering}, vol.
+  193, n. 33, pp. 3541 -- 3557, 2004.
+
+\bibitem[Greco et~al., 2006]{Grecoetal2006}
+M. Greco, F.~A.~R. Gesualdo, W.~S. Venturini, and H.~B. Coda.
+\newblock Nonlinear positional formulation for space truss analysis.
+\newblock {\em Finite Elements in Analysis and Design}, vol. 42, n. 12, pp.
+  1079 -- 1086, 2006.
+
+\bibitem[Greco and Coda, 2006]{Greco2006}
+M. Greco and H. Coda.
+\newblock Positional fem formulation for flexible multi-body dynamic analysis.
+\newblock {\em Journal of Sound and Vibration}, vol. 290, n. 3, pp. 1141 --
+  1174, 2006.
+
+\bibitem[Coda and Paccola, 2007]{Coda2007}
+H.~B. Coda and R.~R. Paccola.
+\newblock An alternative positional fem formulation for geometrically
+  non-linear analysis of shells: Curved triangular isoparametric elements.
+\newblock {\em Computational Mechanics}, vol. 40, n. 1, pp. 185--200, 2007.
+
+\bibitem[Coda and Paccola, 2008]{Coda2008205}
+H. Coda and R. Paccola.
+\newblock A positional fem formulation for geometrical non-linear analysis of
+  shells.
+\newblock {\em Latin American Journal of Solids and Structures}, vol. 5, n. 3,
+  pp. 205--223, 2008.
+
+\bibitem[Hughes et~al., 2005]{Hughes2005}
+T.~J.~R. Hughes, J.~A. Cottrell, and Y. Bazilevs.
+\newblock Isogeometric analysis: Cad, finite elements, nurbs, exact geometry
+  and mesh refinement.
+\newblock {\em Computer Methods in Applied Mechanics and Engineering}, vol.
+  194, n. 39, pp. 4135 -- 4195, 2005.
+
+\bibitem[Cottrell et~al., 2009]{Cottrel2009}
+J.~A. Cottrell, T.~J.~R. Hughes, and Y. Bazilevs.
+\newblock {\em Isogeometric Analysis: Toward integration of CAD and FEA}.
+\newblock John Wiley \& Sons, New York, 2009.
+
+\bibitem[Nguyen et~al., 2015]{NGUYEN201589}
+V.~P. Nguyen, C. Anitescu, S.~P. Bordas, and T. Rabczuk.
+\newblock Isogeometric analysis: An overview and computer implementation
+  aspects.
+\newblock {\em Mathematics and Computers in Simulation}, vol. 117, pp. 89--116,
+  2015.
+
+\bibitem[Yin et~al., 2019]{Yin2019}
+S. Yin, T. Yu, T.~Q. Bui, X. Zheng, and S. Gu.
+\newblock Static and dynamic fracture analysis in elastic solids using a
+  multiscale extended isogeometric analysis.
+\newblock {\em Engineering Fracture Mechanics}, vol. 207, pp. 109 -- 130, 2019.
+
+\bibitem[Coda and Paccola, 2014]{CODA20141}
+H.~B. Coda and R.~R. Paccola.
+\newblock A total-lagrangian position-based fem applied to physical and
+  geometrical nonlinear dynamics of plane frames including semi-rigid
+  connections and progressive collapse.
+\newblock {\em Finite Elements in Analysis and Design}, vol. 91, pp. 1--15,
+  2014.
+
+\bibitem[Coda et~al., 2015]{CODA201515}
+H.~B. Coda, M.~S. Sampaio, and R.~R. Paccola.
+\newblock A fem continuous transverse stress distribution for the analysis of
+  geometrically nonlinear elastoplastic laminated plates and shells.
+\newblock {\em Finite Elements in Analysis and Design}, vol. 101, pp. 15--33,
+  2015.
+
+\bibitem[Coda, 2009]{Coda2009}
+H.~B. Coda.
+\newblock A solid-like fem for geometrically non-linear 3d frames.
+\newblock {\em Computer Methods in Applied Mechanics and Engineering}, vol.
+  198, n. 47, pp. 3712--3722, 2009.
+
+\bibitem[Piegl and Tiller, 1997]{Piegl1997}
+L. Piegl and W. Tiller.
+\newblock {\em The NURBS book}.
+\newblock Springer-Verlag Berlin Heidelberg, 2th edition, 1997.
+
+\bibitem[Holzapfel, 2000]{Holzapfel2000}
+G.~A. Holzapfel.
+\newblock {\em Nonlinear Solid Mechanics: A Continuum Approach for
+  Engineering}.
+\newblock John Wiley \& Sons, Chichester, 2000.
+
+\end{thebibliography}

@@ -1,0 +1,107 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[usenames,dvipsnames,pdftex]{xcolor} %Colocar antes do Pgfplots
+\usepackage{pgfplots}
+\usepackage{icomma}
+
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}
+
+\definecolor{green1}{RGB}{74, 182, 103}
+\definecolor{blue1}{RGB}{0, 160, 160}
+\definecolor{blue2}{RGB}{114, 205, 203}
+\definecolor{red1}{rgb}{0.937,0.161,0.161}
+\definecolor{red2}{RGB}{255, 64, 64}
+\definecolor{yellow1}{RGB}{233, 213, 133}
+%\definecolor{blue69}{RGB}{0, 33, 115}
+\definecolor{blue69}{RGB}{18, 10, 143}
+\definecolor{green69}{RGB}{0, 255, 0}
+\definecolor{yellow69}{RGB}{221, 138, 0}
+\definecolor{blue70}{RGB}{0, 0, 255}
+\definecolor{cian1}{RGB}{33, 208, 204}
+\definecolor{orange1}{RGB}{255, 153, 51}
+\definecolor{purple1}{RGB}{125, 28, 156}
+\definecolor{purple2}{RGB}{140, 0, 200}
+\definecolor{pink1}{RGB}{238, 0, 140}
+
+
+
+\begin{document}
+	
+	\begin{tikzpicture}
+		\begin{axis}[
+			width              = 12cm,        height = 8cm,			          % Set dimensions of figure
+		%	title              = {Deslocamento \textit{versus} tempo},		                      % Title graph
+			xlabel             = Displacement (m),				 			              % Set the x-label
+			ylabel             = $P$ (MPa),		 			              % Set the y-label
+			x label style	   = {inner sep = 0cm, yshift = -0.75ex},			  % Set style label x-axes
+			y label style	   = {inner sep = 0cm, yshift = -2.ex, rotate=0},
+  % Set style label y-axes
+			xmin               = -0.08,           xmax = 0.22, 				          % Set x-axes limits
+			ymin               = -3000,           ymax = 4500,						  % Set y-axes limits
+			y tick label style = {
+				                  /pgf/number format/.cd,
+				                  set decimal separator={.},
+				                  fixed,
+				                  fixed zerofill,
+				                  precision=0,
+				                  /tikz/.cd
+			                     },
+			x tick label style = {
+				                  /pgf/number format/.cd,
+				                  set decimal separator={.},
+				                  fixed,
+							      fixed zerofill,
+								  precision=2,
+								  /tikz/.cd
+			                     },
+%			xmode			   =	log,										  % Scale in x-axes
+%			ymode   		   =	log,										  % Scale in y-axes
+            xtick distance     = 0.04,
+            ytick distance     = 1500,
+			line width		   = 0.8pt,                                           % Set 
+			grid               = major, 							            	  % Display a grid
+			grid style         = {dashed, line width=.1pt, draw=gray!15},		  % Set the style
+			major grid style   = {dashed, line width=0.2pt, draw=gray!50},		  % Defining the style of major tick
+			major tick length  = 5pt,									
+			minor tick length  = 2.5pt, 
+			minor x tick num   = 1,
+			minor y tick num   = 2,
+			legend columns 	   = 3,
+			legend style       = {
+				                  font                  = \small, 
+%				                  draw                  = none, 
+								  %legend pos            = outer north east, 
+								  at={(0.01,1-0.012)},anchor=north west,
+				                 %legend cell align     = left, 
+				                  /tikz/column 2/.style = {column sep=5pt}
+			                     }
+			]
+		
+
+
+			\addplot [line width=0.9pt, color=black, smooth] 	
+			table[x=ANSYS, y=FORCE, col sep=comma]{arc_08.csv};
+			\addlegendentry{ANSYS};
+
+			\addplot [line width=0.9pt, color=blue70, smooth] 	
+			table[x=WORK, y=FORCE, col sep=comma]{arc_08.csv};
+			\addlegendentry{Present work};
+
+			% \addplot [line width=0.9pt, color=green69] 	
+			% table[x=ANSYS2, y=Force, col sep=comma]{beam_static.csv};
+			% \addlegendentry{ANSYS};
+
+			% \addplot [line width=0.9pt, color=pink1] 	
+			% table[x=WORK2, y=Force, col sep=comma]{beam_static.csv};
+			% \addlegendentry{Present work};
+
+
+			
+			
+			
+		\end{axis}
+	\end{tikzpicture}
+	
+\end{document}
